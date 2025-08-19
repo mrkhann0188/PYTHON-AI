@@ -29,13 +29,20 @@ def bfs(graph, start):
                 queue.append(neighbour)
     print()
 
+# graph = {
+#     'A': ['B', 'C'],
+#     'B': ['D', 'E'],
+#     'C': ['F'],
+#     'D': [],
+#     'E': ['F'],
+#     'F': []
+# }
 graph = {
-    'A': ['B', 'C'],
-    'B': ['D', 'E'],
-    'C': ['F'],
-    'D': [],
+    'A': ['D', 'E'],
+    'B': ['B', 'C'],
+    'C': ['D'],
+    'D': ['B','C'],
     'E': ['F'],
     'F': []
 }
-
 bfs(graph, 'A')
